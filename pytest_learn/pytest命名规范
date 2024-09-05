@@ -1,0 +1,3 @@
+.py 文件以 test_ 开头 (或以 _test 结尾)
+测试方法以 test_ 开头
+测试类以 Test 开头, 且不能有init方法
