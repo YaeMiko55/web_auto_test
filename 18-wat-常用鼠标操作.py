@@ -5,11 +5,18 @@ from selenium.webdriver import ActionChains
 from selenium.webdriver.common.by import By
 
 """
-    常用鼠标操作
-        左键单击
-        左键双击
-        右键单击
-        悬停
+    常用鼠标操作：
+        说明：selenium框架中鼠标操作的一系列方法封装在ActionChains类中
+        方法：
+            左键单击    click()
+            左键双击    double_click()
+            右键单击    context_click()
+            悬停       move_to_element()
+            拖拽       drag_and_drop()
+            执行       perform()
+        示例：
+            action = ActionChains(driver)
+            action.double_click(el).perform()              
 """
 
 driver = webdriver.Edge()
