@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>prompt</title>
+</head>
+<body>
+<button id="prompt">
+    promptBtn
+</button>
+<script>
+    prp = document.querySelector('#prompt')
+    prp.addEventListener('click', () => {
+        let username = prompt('请输入用户名：')
+        if(username) alert(`欢迎 ${username}`)
+    })
+
+</script>
+</body>
+</html>

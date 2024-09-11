@@ -58,7 +58,10 @@ def prompt_handle():
     driver.find_element(By.NAME, 'b1').click()
     time.sleep(2)
     # 输入内容
-    driver.switch_to.alert.send_keys("prompt123")
+    prompt = driver.switch_to.alert
+    prompt.send_keys('prompt123')
+    prompt.accept()
+    time.sleep(2)
 
 
 if __name__ == '__main__':
